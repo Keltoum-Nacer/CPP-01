@@ -6,14 +6,14 @@
 /*   By: knacer <knacer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:19 by knacer            #+#    #+#             */
-/*   Updated: 2024/10/14 14:55:38 by knacer           ###   ########.fr       */
+/*   Updated: 2024/10/20 18:31:54 by knacer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HARL_HPP
 #define HARL_HPP
 
-#include<io
+#include<iostream>
 
 class Harl
 {
@@ -24,6 +24,6 @@ class Harl
         void error( void );
     public:
         void complain( std::string level );
-}
+};
 
 #endif

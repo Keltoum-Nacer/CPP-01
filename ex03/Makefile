@@ -1,13 +1,13 @@
 SRCS = main.cpp Weapon.cpp  HumanA.cpp HumanB.cpp 
 OFILES = $(SRCS:.cpp=.o)
 CC = g++
-#CFLAGS = -Wall -Wextra -Werror 
+CFLAGS = -Wall -Wextra -Werror 
 NAME = violence
 
 all: $(NAME)
 
 $(NAME) : $(OFILES)
-	$(CC) $(SRCS) -o $(NAME)
+	$(CC) $(CFLAGS) $(SRCS) -o $(NAME)
 
 clean: 	
 	rm -f $(OFILES)

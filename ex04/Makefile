@@ -1,13 +1,13 @@
 SRCS = main.cpp 
 OFILES = $(SRCS:.cpp=.o)
 CC = g++
-#CFLAGS = -Wall -Wextra -Werror 
+CFLAGS = -Wall -Wextra -Werror 
 NAME = file
 
 all: $(NAME)
 
 $(NAME) : $(OFILES)
-	$(CC) $(SRCS) -o $(NAME)
+	$(CC) $(CFLAGS) $(SRCS) -o $(NAME)
 
 clean: 	
 	rm -f $(OFILES)
